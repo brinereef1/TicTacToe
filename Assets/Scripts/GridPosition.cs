@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using System;
 
 public class GridPosition : MonoBehaviour
 {
@@ -16,7 +15,11 @@ public class GridPosition : MonoBehaviour
             Collider2D hit = Physics2D.OverlapPoint(worldPos);
 
             if (hit != null)
-                Debug.Log(hit.name);
+            {
+                Debug.Log(hit.name); 
+                GameManager.Instance.ClickedOnGridPosition(x, y);
+            }
+                
         }
     }
 }

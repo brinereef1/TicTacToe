@@ -1,4 +1,4 @@
-using Unity.Mathematics;
+using Unity.Netcode;
 using UnityEngine;
 
 public class GameVisualManager : MonoBehaviour
@@ -15,17 +15,14 @@ public class GameVisualManager : MonoBehaviour
     // Creates a circle at the world position of the clicked grid square.
     private void GameManager_OnClickedGridPosition(object sender, GameManager.OnClickedOnPositionEventArgs e)
     {
-        Instantiate(circlePrefab, GetGridWorldPosition(e.x, e.y), Quaternion.identity);
+        Transform spawnedObject =  Instantiate(circlePrefab);
+        spawnedObject.GetComponent<NetworkObject>().Spawn(true);
+        spawnedObject.position = GetGridWorldPosition(e.x, e.y);
     }
 
     // Converts grid coordinates into the matching world position.
     private Vector2 GetGridWorldPosition(int x, int y)
     {
         return new Vector2(-GRID_SIZE + x * GRID_SIZE, -GRID_SIZE + y * GRID_SIZE);
-    }
-
-    void OnDisable()
-    {
-        GameManager.Instance.onClickedOnGridPosition -= GameManager_OnClickedGridPosition;
     }
 }

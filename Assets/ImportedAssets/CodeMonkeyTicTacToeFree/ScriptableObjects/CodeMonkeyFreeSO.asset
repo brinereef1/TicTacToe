@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.00
   subtype: tictactoengofree
-  lastShownTimestamp: 1788521304
+  lastShownTimestamp: 1788610945
   lastUpdateResponse:
     version: 1.00
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1788521304
+  checkedLastUpdateTimestamp: 1788610945
   lastQOTDResponse:
     questionId: 339
     questionText: What is the correct way to show a variable in the Editor?
@@ -27,19 +27,20 @@ MonoBehaviour:
     answerC: '[SerializeField] private int health;'
     answerD: private int health;
     answerE: 
-  lastQotdTimestamp: 1788521304
+  lastQotdTimestamp: 1788610945
   lastDynamicHeaderResponse:
-    topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/summer2025CodeMonkeyBundle_EndsSoon.png
-    topText: Get 80% OFF on ALL my Courses and Games!!! (ENDS AUGUST)
-    topLink: summerbundle
-    bottomText: DONT MISS the latest important trends, sign up for my FREE Weekly
-      Newsletter!
-    bottomLink: gamedevreport
-  lastDynamicHeaderTimestamp: 1788521304
+    topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/humbleSep26Maksym.png
+    topText: AWESOME Characters and Weapons 98% OFF! (Modern, Medieval, Fantasy,
+      Sci-Fi, etc)
+    topLink: humblebundle
+    bottomText: Escape Tutorial Hell and level up your skills, try my Practice Lab
+      for FREE!
+    bottomLink: practicelab
+  lastDynamicHeaderTimestamp: 1788610945
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1788521304
+  websiteLatestMessageTimestamp: 1788610945
   websiteLatestVideos:
     videos:
     - youTubeId: 8xj9IEFRgKo
@@ -51,4 +52,4 @@ MonoBehaviour:
         that)
     - youTubeId: VZCaQSzsGwU
       title: TOP 10 FREE NEW Assets AUGUST 2026!
-  websiteLatestVideosTimestamp: 1788521304
+  websiteLatestVideosTimestamp: 1788610945

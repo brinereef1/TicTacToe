@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
     {
         player.OnHealthChange += UpdateHealth;
         player.OnDamageTaken += ShowDamageTaken;
+        player.onScoreChange += UpdateScore;
     }
 
     void UpdateHealth(int health)
@@ -20,9 +21,15 @@ public class Enemy : MonoBehaviour
         Debug.Log("Player took " + damage + " damage.");    
     }
 
+    void UpdateScore(int amount)
+    {
+        Debug.Log("Added " + amount + " to the player score");
+    }
+
     void OnDisable()
     {
         player.OnHealthChange -= UpdateHealth;
         player.OnDamageTaken -= ShowDamageTaken;
+        player.onScoreChange -= UpdateScore;
     }
 }
